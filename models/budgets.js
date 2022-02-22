@@ -2,6 +2,7 @@ const mongoose = require('../db/connection')
 
 
 const BudgetSchema = new mongoose.Schema({
+    Month: Object,
     Housing: String,
     Groceries: String,
     Water: String,

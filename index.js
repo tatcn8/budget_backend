@@ -29,17 +29,17 @@ app.use(express.urlencoded({ extended: true }))
 // Redirect
 
 app.get('/', (req, res) => {
-  res.redirect('/budget')
+  res.redirect('/budgets')
 })
 
 
 /* START CONTROLLERS HERE */
 
 const budgetController = require('./controllers/budgetController')
-app.use('/budget/', budgetController)
+app.use('/budgets/', budgetController)
 
 const incomeController = require('./controllers/incomeController')
-app.use('/income/', incomeController)
+app.use('/incomes/', incomeController)
 
 
 /* END CONTROLLERS HERE */

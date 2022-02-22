@@ -2,7 +2,7 @@ const express = require('express')
 
 const router = express.Router()
 
-const Budget = require('../models/budget')  
+const Budget = require('../models/budgets')  
 
 router.get('/', async (req, res, next) => {
     try {
