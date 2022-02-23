@@ -3,10 +3,10 @@ const mongoose = require('../db/connection')
 
 const IncomeSchema = new mongoose.Schema({
     Month: Object,
-    Income: String,
-    Income_2: String,
-    Side_Hustle: String,
-    Side_Hustle_2: String
+    Income: Number,
+    Income_2: Number,
+    Side_Hustle: Number,
+    Side_Hustle_2: Number
 })
 
 const Income = mongoose.model('Income', IncomeSchema)

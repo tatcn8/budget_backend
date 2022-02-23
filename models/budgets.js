@@ -3,18 +3,21 @@ const mongoose = require('../db/connection')
 
 const BudgetSchema = new mongoose.Schema({
     Month: Object,
-    Housing: String,
-    Groceries: String,
-    Water: String,
-    Trash: String,
-    Natural_Gas: String,
-    Electric: String,
-    Sewer: String,
-    Fuel: String,
-    Entertainment: String,
-    Allowance: String,
-    Retirement: String,
-    Savings: String
+    Housing: Number,
+    Groceries: Number,
+    Water: Number,
+    Trash: Number,
+    Natural_Gas: Number,
+    Electric: Number,
+    Sewer: Number,
+    Fuel: Number,
+    Entertainment: Number,
+    Allowance: Number,
+    Retirement: Number,
+    Savings: Number,
+    Phone: Number,
+    Internet: Number,
+    Charitable_Giving: Number
 })
 
 const Budget = mongoose.model('Budget', BudgetSchema)
