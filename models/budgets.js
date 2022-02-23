@@ -17,7 +17,8 @@ const BudgetSchema = new mongoose.Schema({
     Savings: Number,
     Phone: Number,
     Internet: Number,
-    Charitable_Giving: Number
+    Charitable_Giving: Number,
+    College_Savings: Number
 })
 
 const Budget = mongoose.model('Budget', BudgetSchema)
